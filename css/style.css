@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Oxygen:wght@700&display=swap');
+
+/*
+font-family: 'Manrope', sans-serif;
+font-family: 'Oxygen', sans-serif;
+*/
+
+body, html
+{
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.title
+{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-size: 10vw;
+}
+
+.title.sub
+{
+    font-family: 'Oxygen', sans-serif;
+    text-align: left;
+    font-size: 36pt;
+    color: gray;
+    line-height: 36pt;
+}
+
+.text
+{
+    font-family: 'Manrope', sans-serif;
+    text-align: left;
+    font-size: 18pt;
+    line-height: 1;
+    margin: 4pt;
+}
+
+.container
+{
+    width: 75vw;
+    margin-left: 12.5vw;
+    padding: 0;
+    margin-top: 0;
+}
+
+.question
+{
+    font-family: 'Oxygen', sans-serif;
+    text-align: center;
+    font-size: 24pt;
+}
+
+.description
+{
+    width: 25vw;
+    margin-left: 37.5vw;
+    font-family: 'Manrope', sans-serif;
+    text-align: center;
+    font-size: 18pt;
+    color: gray;
+}
+
+.buttoncontainer
+{
+    width: 25vw;
+    margin-left: 37.5vw;
+}
+.button
+{
+    width: 25vw;
+    height: 5vh;
+    font-family: 'Manrope', sans-serif;
+    text-align: left;
+    font-size: 16pt;
+    color: white;
+    outline: 0;
+    border: 0;
+    border-radius: 1vw;
+    display: block;
+    margin-top: 1vh;
+}
+.button.strongagree
+{
+    background-color: #0f8500;
+}
+.button.agree
+{
+    background-color: #09b500;
+}
+.button.somewhatagree
+{
+    background-color: #88ff75;
+}
+.button.neutral
+{
+    background-color: #d9d9d9;
+}
+.button.somewhatdisagree
+{
+    background-color: #ff7575;
+}
+.button.disagree
+{
+    background-color: #ff0000;
+}
+.button.strongdisagree
+{
+    background-color: #910000;
+}
+.button.back
+{
+    background-color: gray;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .buttoncontainer
+    {
+        margin-left: 1vw;;
+    }
+    .button
+    {
+        width: 98vw;
+        height: 5vh;
+        font-family: 'Manrope', sans-serif;
+        text-align: left;
+        font-size: 16pt;
+        outline: 0;
+        border: 0;
+        color: white;
+        border-radius: 1vw;
+        display: block;
+        margin-top: 1vh;
+    }
+    .description
+    {
+        margin: 0;
+        width: 100vw;
+    }
+    .ncont
+    {
+        width: 94vw;
+        height: 110vh;
+        margin-left: 3vw;
+    }
+    body, html
+    {
+        width: 100vw;
+        height: 100vh;
+    }
+}
+@media only screen and (min-width: 600px)
+{
+    .ncont
+    {
+        width: 50vw;
+        margin-left: 25vw;
+        height: 100vh;
+    }
+    br
+    {
+        display: none;
+    }
+    .title
+    {
+        font-size: 6vw;
+    }
+}
+
+.alwaysdisplay
+{
+    display: block !important;
+}
+
+.q_hiding
+{
+    opacity: 0;
+}
+
+.q
+{
+    transition: opacity 0.4s;
+}
+
+.q_hidden
+{
+    display: none;
+}
+
+@keyframes showing
+{
+    0% 
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+.q_shown
+{
+    display: block;
+    animation: showing 0.4s ease;
+}
+
+.result_bar
+{
+    width: 100%;
+    height: 8%;
+    margin-top: 15px;
+    background-color: grey;
+    border-radius: 1vw;
+    overflow: hidden;
+}
+
+.bar_left
+{
+    float: left;
+}
+
+.bar_right
+{
+    float: right;
+}
+
+.footer 
+{
+    position: fixed;
+    left: 0;
+    right: 5%;
+    bottom: 0;
+    width: 95%;
+    color: gray;
+    text-align: right;
+  }
