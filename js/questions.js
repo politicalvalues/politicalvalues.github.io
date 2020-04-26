@@ -34,12 +34,102 @@ var questions =
         }
     },
     {
+        "question": "Abortion should sometimes be illegal.",
+        "description": "Late-stage abortions should be illegal, as well as abortions caused out of inconsideration for consequences of the action.",
+        "effect":
+        {
+            "x": 5,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 5,
+            "rev": 3,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "Abortion should be allowed, no matter what.",
+        "description": "Regardless of the situation, abortion should always be entirely legal.",
+        "effect":
+        {
+            "x": -5,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": -2,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": -2,
+            "race": 0,
+        }
+    },
+    {
+        "question": "I will always support my country.",
+        "description": "Even if my country does things which are undoubtedly morally wrong, I will still stand behind my country and support it entirely.",
+        "effect":
+        {
+            "x": 6,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 3,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "Openness about sex has gone too far.",
+        "description": "Conversations about sex should be reduced or entirely halted. It's important that conversations about sex are kept private between adults.",
+        "effect":
+        {
+            "x": 3,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 2,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "People are divided more by class than by race.",
+        "description": "People are generally much less divided by their race than the social class that they're in.",
+        "effect":
+        {
+            "x": 0,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": -2,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
         "question": "My nation is better than other nations.",
         "description": "The country that I currently reside in is superior to any and all other nations.",
         "effect":
         {
             "x": 5,
-            "national": 12,
+            "national": 5,
             "authoritarian": 0,
             "progressive": 0,
             "rev": 3,
@@ -57,7 +147,7 @@ var questions =
         "effect":
         {
             "x": 5,
-            "national": 10,
+            "national": 5,
             "authoritarian": 0,
             "progressive": 0,
             "rev": 0,
@@ -74,11 +164,11 @@ var questions =
         "description": "I think that the current state of my nation is satisfactory, and there's no need to implement dramatic changes.",
         "effect":
         {
-            "x": 5,
+            "x": 0,
             "national": 5,
             "authoritarian": 0,
-            "progressive": 15,
-            "rev": 20,
+            "progressive": 6,
+            "rev": 7,
             "central": 0,
             "production": 0,
             "cultural": 0,
@@ -92,11 +182,11 @@ var questions =
         "description": "It's important that the whole nation is not overturned suddenly and any changes are implemented gradually.",
         "effect":
         {
-            "x": 5,
-            "national": 4,
+            "x": 3,
+            "national": 0,
             "authoritarian": 0,
-            "progressive": 15,
-            "rev": 20,
+            "progressive": 6,
+            "rev": 10,
             "central": 0,
             "production": 0,
             "cultural": 0,
@@ -111,8 +201,8 @@ var questions =
         "effect":
         {
             "x": 5,
-            "national": 4,
-            "authoritarian": -2,
+            "national": 3,
+            "authoritarian": 0,
             "progressive": 7,
             "rev": 3,
             "central": 0,
@@ -1258,6 +1348,204 @@ var questions =
         }
     },
     {
+        "question": "I'm more right-winged than left-winged.",
+        "description": "",
+        "effect":
+        {
+            "x": 10,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "I agree with the following.",
+        "description": "All Cops Are Bastards, not meaning all cops are awful people, but rather the police force is used oppresively and should be totally reformed or outright destroyed.",
+        "effect":
+        {
+            "x": -4,
+            "national": 0,
+            "authoritarian": -3,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "A stateless society is optimal.",
+        "description": "A world without any states or nations is optimal.",
+        "effect":
+        {
+            "x": -2,
+            "national": 0,
+            "authoritarian": -6,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "Nuclear energy is a bad idea.",
+        "description": "Nuclear energy, a clean source of energy, is a bad idea and is harmful.",
+        "effect":
+        {
+            "x": -4,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "I'm more of a libertarian than an authoritarian.",
+        "description": "",
+        "effect":
+        {
+            "x": 0,
+            "national": 0,
+            "authoritarian": -10,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "I support trickle down economics.",
+        "description": "Trickle-down economics, also called trickle-down theory, refers to the economic proposition that taxes on businesses and the wealthy in society should be reduced as a means to stimulate business investment in the short term and benefit society at large in the long term.",
+        "effect":
+        {
+            "x": 4,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 4,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "Liberty is a priority above anything else.",
+        "description": "It's more important that I have my liberties than anything else.",
+        "effect":
+        {
+            "x": 0,
+            "national": 0,
+            "authoritarian": -13,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "Primitivism is a good idea.",
+        "description": "Life should go back to being simple. Modern things, such as tap water, cars, trains, busses, complex politics, are all useless.",
+        "effect":
+        {
+            "x": 0,
+            "national": 0,
+            "authoritarian": -6,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "A Green New Deal is a good idea.",
+        "description": "A proposed Green New Deal would severely cut emissions. However, with that, the price of energy would spike significantly.",
+        "effect":
+        {
+            "x": -7,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "The rich have earned their money.",
+        "description": "People with tons of money have earned it themselves. They're deserving of the money they have.",
+        "effect":
+        {
+            "x": 6,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 6,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "High taxation for the rich is okay.",
+        "description": "People with money in excess of $10,000,000 should have very high tax rates. Rates of upwards of ~50% are acceptable.",
+        "effect":
+        {
+            "x": -3,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
         "question": "Good relations are important.",
         "description": "It's more important that we maintain a good relationship will all of our neighboring nations than that we are successful.",
         "effect":
@@ -1273,6 +1561,78 @@ var questions =
             "state": 0,
             "religion": 0,
             "race": 1,
+        }
+    },
+    {
+        "question": "I'm a religious person.",
+        "description": "I personally believe religion is important. I also think that there is a higher power.",
+        "effect":
+        {
+            "x": 6,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": -11,
+            "race": 0,
+        }
+    },
+    {
+        "question": "Land should not be a commodity to be bought, nor sold.",
+        "description": "All land in the world should be communal or free. Selling and buying land is pointless.",
+        "effect":
+        {
+            "x": -6,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": -9,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "Finance is a useless field.",
+        "description": "People who manipulate money shouldn't benefit from the economy as they contribute nothing to society in terms of materiel.",
+        "effect":
+        {
+            "x": -8,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": -6,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
+        "question": "A free market is inherently dangerous to people.",
+        "description": "Free markets should not ever be put in to place as they're dangerous.",
+        "effect":
+        {
+            "x": -3,
+            "national": 0,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
         }
     },
     {
@@ -1294,11 +1654,29 @@ var questions =
         }
     },
     {
+        "question": "International aid is beneficial to me.",
+        "description": "I, and my country, both personally benefit from international aid.",
+        "effect":
+        {
+            "x": -8,
+            "national": -5,
+            "authoritarian": 0,
+            "progressive": 0,
+            "rev": 0,
+            "central": 0,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
         "question": "A higher minimum wage is required.",
         "description": "The current minimum wage is too low to live off of and must be raised.",
         "effect":
         {
-            "x": -5,
+            "x": -3,
             "national": 0,
             "authoritarian": 1,
             "progressive": -5,
@@ -1312,11 +1690,29 @@ var questions =
         }
     },
     {
+        "question": "Countries such as Denmark have a fantastic healthcare system.",
+        "description": "",
+        "effect":
+        {
+            "x": -3,
+            "national": -1,
+            "authoritarian": 0,
+            "progressive": -3,
+            "rev": 0,
+            "central": 2,
+            "production": 0,
+            "cultural": 0,
+            "state": 0,
+            "religion": 0,
+            "race": 0,
+        }
+    },
+    {
         "question": "Uneducated people should not be allowed to vote.",
         "description": "People who can't demonstrate a clear understanding of politics and political philosphophy should not be allowed to vote.",
         "effect":
         {
-            "x": 5,
+            "x": -2,
             "national": 0,
             "authoritarian": 4,
             "progressive": -4,
@@ -1334,10 +1730,10 @@ var questions =
         "description": "Corporations and companies can not be trusted to stop climate change. The government must intervene with different forms of regulations to ensure that the Earth is kept safe.",
         "effect":
         {
-            "x": -5,
+            "x": -3,
             "national": 0,
             "authoritarian": 1,
-            "progressive": -3,
+            "progressive": -5,
             "rev": 0,
             "central": 0,
             "production": 7,
@@ -1352,7 +1748,7 @@ var questions =
         "description": "I don't belong to a country or a nation, but rather, the world.",
         "effect":
         {
-            "x": -5,
+            "x": -3,
             "national": -10,
             "authoritarian": -2,
             "progressive": -2,
@@ -1370,7 +1766,7 @@ var questions =
         "description": "Absolutely everybody should be afforded an education.",
         "effect":
         {
-            "x": -5,
+            "x": 0,
             "national": 0,
             "authoritarian": 1,
             "progressive": -4,
