@@ -1,3 +1,11 @@
+/**
+ * Welcome to the Questions file!
+ * You can modify, delete, create, etc, your own questions here.
+ * The rest of this quiz's script will automagically take place of your questions for you.
+ * For more help, please consult our GitHub wiki
+ * https://github.com/politicalvalues/politicalvalues.github.io
+ */
+
 var questions =
 [
     {
@@ -1765,111 +1773,3 @@ var questions =
         }
     },
 ];
-questions.forEach(function (question, index)
-{
-    var questionIndexTitle = "question_" + index;
-    _("@").append('<div class="q_hidden" sv="' + questionIndexTitle + '"></div>');
-    _("$" + questionIndexTitle).append('<p class="question">' + question.question + '</p>');
-    _("$" + questionIndexTitle).append('<p class="description">' + question.description + '</p>');
-    _("$" + questionIndexTitle).append('<div sv="buttons_' + questionIndexTitle + '" class="buttoncontainer"></div>');
-    _("$buttons_" + questionIndexTitle).append('<button class="button strongagree" onclick="submitAnswer(' + index + ', 1.5)">Strongly Agree</div>');
-    _("$buttons_" + questionIndexTitle).append('<button class="button agree" onclick="submitAnswer(' + index + ', 1)">Agree</div>');
-    _("$buttons_" + questionIndexTitle).append('<button class="button somewhatagree" onclick="submitAnswer(' + index + ', 0.5)">Somewhat Agree</div>');
-    _("$buttons_" + questionIndexTitle).append('<button class="button neutral" onclick="submitAnswer(' + index + ', 0)">Neutral</button>');
-    _("$buttons_" + questionIndexTitle).append('<button class="button somewhatdisagree" onclick="submitAnswer(' + index + ', -0.5)">Somewhat Disagree</div>');
-    _("$buttons_" + questionIndexTitle).append('<button class="button disagree" onclick="submitAnswer(' + index + ', -1)">Disagree</button>');
-    _("$buttons_" + questionIndexTitle).append('<button class="button strongdisagree" onclick="submitAnswer(' + index + ', -1.5)">Strongly Disagree</button>');
-    _("$buttons_" + questionIndexTitle).append('<button sv="backbutton' + index + '" class="button back" onclick="arrayPop()">Go Back</button>');
-});
-
-_("$backbutton0").hide();
-
-var pointer = 1;
-var scoresplus =
-{
-    "x": 0,
-    "national": 0,
-    "authoritarian": 0,
-    "progressive": 0,
-    "rev": 0,
-    "central": 0,
-    "production": 0,
-    "cultural": 0,
-    "state": 0,
-    "religion": 0,
-    "race": 0,
-}
-var scoresminus =
-{
-    "x": 0,
-    "national": 0,
-    "authoritarian": 0,
-    "progressive": 0,
-    "rev": 0,
-    "central": 0,
-    "production": 0,
-    "cultural": 0,
-    "state": 0,
-    "religion": 0,
-    "race": 0,
-}
-
-function submitAnswer (index, mod)
-{
-    for (var key in questions[index].effect)
-    {
-        var val = questions[index].effect[key];
-        if ((val * mod) > 0) scoresplus[key] += Math.abs(val * mod);
-        else scoresminus[key] += Math.abs(val * mod);
-    }
-    _("$question_" + index).setClass("q q_hiding");
-    setTimeout(function ()
-    {
-        _("$question_" + index).setClass("q q_hidden");
-        if ((index + 1) == questions.length) finish();
-        else _("$question_" + parseInt(index + 1)).setClass("q q_shown");
-    }, 400);
-    pointer++;
-    _("$qn").html(pointer);
-    arrayPush(questions[index].effect, mod);
-}
-
-var previousAnswers = [];
-
-function arrayPush (modifier, mod)
-{
-    modifier.mod = mod;
-    previousAnswers.push(modifier);
-}
-
-function arrayPop ()
-{
-    var toUndo = previousAnswers[previousAnswers.length - 1];
-    previousAnswers.pop();
-    for (var key in toUndo)
-    {
-        var val = toUndo[key];
-        if ((val * toUndo.mod) > 0) scoresplus[key] -= Math.abs(val * toUndo.mod);
-        else scoresminus[key] -= Math.abs(val * toUndo.mod);
-    }
-    _("$question_" + parseInt(pointer - 1)).setClass("q q_hiding");
-    setTimeout(function ()
-    {
-        _("$question_" + parseInt(pointer)).setClass("q q_hidden");
-        _("$question_" + parseInt(pointer - 1)).setClass("q q_shown");
-    }, 400);
-    pointer--;
-}
-
-function finish ()
-{
-    Cookies.set("scoresplus", JSON.stringify(scoresplus));
-    Cookies.set("scoresminus", JSON.stringify(scoresminus));
-    window.location.href = "results.html";
-}
-
-_("$question_0").setClass("q q_shown");
-setTimeout(function ()
-{
-    _("$qt").html(questions.length);
-}, 100);
