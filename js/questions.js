@@ -1,18 +1,3 @@
-/**
- * X axis. Negative represents leftism, positive represents rightism.
- * Nationalismn / globalization. Lower numbers represents the globe, higher means nation.
- * Auth / lib. Lower means lib, higher means auth.
- * Progressive / tradition. Lower means progressive, higher means traditional
- * Rev / reform. Lower = rev
- * Science / utopian low = science
- * central / decentral low = central
- * production / nature low = production
- * cultural / scientific low = cult
- * state / market low = state
- * religion / secular low = religion
- * race / equality low = race
- */
-
 var questions =
 [
     {
