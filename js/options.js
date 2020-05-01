@@ -5,20 +5,152 @@
  * https://github.com/politicalvalues/politicalvalues.github.io
  */
 
-var main_axes =
+var axes =
 [
-    "x",
-    "national",
-    "authoritarian",
-    "progressive",
-    "rev",
-    "central",
-    "production",
-    "cultural",
-    "state",
-    "religion",
-    "race",
-];
+    {
+        "key": "x",
+        "titles":
+        {
+            "negative": "Liberal",
+            "positive": "Conservative",
+        },
+        "colors":
+        {
+            "negative": "blue",
+            "positive": "red",
+        },
+    },
+    {
+        "key": "national",
+        "titles":
+        {
+            "negative": "Internationalist",
+            "positive": "Nationalist",
+        },
+        "colors":
+        {
+            "negative": "#88ba8d",
+            "positive": "#88b8ba",
+        },
+    },
+    {
+        "key": "authoritarian",
+        "titles":
+        {
+            "negative": "Libertarian",
+            "positive": "Authoritarian",
+        },
+        "colors":
+        {
+            "negative": "#ffeb3b",
+            "positive": "#3f51b5",
+        },
+    },
+    {
+        "key": "progressive",
+        "titles":
+        {
+            "negative": "Progressive",
+            "positive": "Traditional",
+        },
+        "colors":
+        {
+            "negative": "#888dba",
+            "positive": "#a988ba",
+        },
+    },
+    {
+        "key": "rev",
+        "titles":
+        {
+            "negative": "Revolutionary",
+            "positive": "Reformist",
+        },
+        "colors":
+        {
+            "negative": "#c95560",
+            "positive": "#55b0c9",
+        },
+    },
+    {
+        "key": "central",
+        "titles":
+        {
+            "negative": "Centralized",
+            "positive": "Decentralized",
+        },
+        "colors":
+        {
+            "negative": "#55c987",
+            "positive": "#7ec955",
+        },
+    },
+    {
+        "key": "production",
+        "titles":
+        {
+            "negative": "Production",
+            "positive": "Nature",
+        },
+        "colors":
+        {
+            "negative": "#752112",
+            "positive": "#34db16",
+        },
+    },
+    {
+        "key": "cultural",
+        "titles":
+        {
+            "negative": "Cultural",
+            "positive": "Scientific",
+        },
+        "colors":
+        {
+            "negative": "#16dbc4",
+            "positive": "#1662db",
+        },
+    },
+    {
+        "key": "state",
+        "titles":
+        {
+            "negative": "Communal",
+            "positive": "Market",
+        },
+        "colors":
+        {
+            "negative": "#9063e6",
+            "positive": "#3a1d73",
+        },
+    },
+    {
+        "key": "religion",
+        "titles":
+        {
+            "negative": "Religious",
+            "positive": "Scientific",
+        },
+        "colors":
+        {
+            "negative": "#6a1d73",
+            "positive": "#d117c8",
+        },
+    },
+    {
+        "key": "race",
+        "titles":
+        {
+            "negative": "Identity",
+            "positive": "Equality",
+        },
+        "colors":
+        {
+            "negative": "#17d1a3",
+            "positive": "#94e0ce",
+        },
+    },
+]
 
 var buttons =
 {
@@ -77,5 +209,5 @@ var buttons =
         "color": "gray",
         "text": "Go Back",
         "order": 8,
-    }
+    },
 }

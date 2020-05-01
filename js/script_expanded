@@ -43,10 +43,10 @@ questions.forEach(function (question, index)
 
 var pointer = 1;
 var scoresplus = {}, scoresminus = {};
-main_axes.forEach(function (element)
+axes.forEach(function (element)
 {
-    scoresplus[element] = 0;
-    scoresminus[element] = 0;
+    scoresplus[element.key] = 0;
+    scoresminus[element.key] = 0;
 });
 
 function submitAnswer (index, mod)
@@ -54,8 +54,8 @@ function submitAnswer (index, mod)
     for (var key in questions[index].effect)
     {
         var val = questions[index].effect[key];
-        if ((val * mod) > 0) scoresplus[key] += Math.abs(val * mod);
-        else scoresminus[key] += Math.abs(val * mod);
+        if ((val * mod) > 0) Math.floor(scoresplus[key] += Math.abs(val * mod));
+        else scoresminus[key] += Math.floor(Math.abs(val * mod));
     }
     _("$question_" + index).setClass("q q_hiding");
     setTimeout(function ()
@@ -99,9 +99,7 @@ function arrayPop ()
 
 function finish ()
 {
-    Cookies.set("scoresplus", JSON.stringify(scoresplus));
-    Cookies.set("scoresminus", JSON.stringify(scoresminus));
-    window.location.href = "results.html";
+    window.location.href = "results.html?p=" + JSON.stringify(scoresplus) + "&n=" + JSON.stringify(scoresminus);
 }
 
 _("$question_0").setClass("q q_shown");
