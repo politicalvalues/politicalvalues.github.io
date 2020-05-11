@@ -14,3 +14,6 @@ on the code here.
 Note that I didn't create this to provide everybody with help, and to be entirely honest, I probably won't,
 because this was really just a small side project I wanted to complete within a day, but everything inside of this
 should be pretty easy to figure out, and, well, if it's not, you're out of luck.
+
+## Wiki
+Some additional help can be found in the wiki section, go check there if you're confused.
