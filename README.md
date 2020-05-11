@@ -5,10 +5,9 @@ on the code here.
 
 ## Creating your own
 1. Fork the repo
-2. Edit
+2. Edit - to accurately reflect the changes you wish to make
   a. js/options.js
   b. js/questions.js
-  - to accurately reflect the changes you wish to make
 3. That's really it, it's not difficult
 
 ## Help
