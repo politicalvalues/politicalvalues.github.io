@@ -5,22 +5,19 @@ font-family: 'Manrope', sans-serif;
 font-family: 'Oxygen', sans-serif;
 */
 
-body, html
-{
+body, html {
     font-family: 'Manrope', sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.title
-{
+.title {
     font-family: 'Oxygen', sans-serif;
     text-align: center;
     font-size: 10vw;
 }
 
-.title.sub
-{
+.title.sub {
     font-family: 'Oxygen', sans-serif;
     text-align: left;
     font-size: 36pt;
@@ -28,8 +25,7 @@ body, html
     line-height: 36pt;
 }
 
-.text
-{
+.text {
     font-family: 'Manrope', sans-serif;
     text-align: left;
     font-size: 18pt;
@@ -37,23 +33,20 @@ body, html
     margin: 4pt;
 }
 
-.container
-{
+.container {
     width: 75vw;
     margin-left: 12.5vw;
     padding: 0;
     margin-top: 0;
 }
 
-.question
-{
+.question {
     font-family: 'Oxygen', sans-serif;
     text-align: center;
     font-size: 24pt;
 }
 
-.description
-{
+.description {
     width: 25vw;
     margin-left: 37.5vw;
     font-family: 'Manrope', sans-serif;
@@ -62,13 +55,12 @@ body, html
     color: gray;
 }
 
-.buttoncontainer
-{
+.buttoncontainer {
     width: 25vw;
     margin-left: 37.5vw;
 }
-.button
-{
+
+.button {
     width: 25vw;
     height: 5vh;
     font-family: 'Manrope', sans-serif;
@@ -81,47 +73,45 @@ body, html
     display: block;
     margin-top: 1vh;
 }
-.button.strongagree
-{
+
+.button.strongagree {
     background-color: #0f8500;
 }
-.button.agree
-{
+
+.button.agree {
     background-color: #09b500;
 }
-.button.somewhatagree
-{
+
+.button.somewhatagree {
     background-color: #88ff75;
 }
-.button.neutral
-{
+
+.button.neutral {
     background-color: #d9d9d9;
 }
-.button.somewhatdisagree
-{
+
+.button.somewhatdisagree {
     background-color: #ff7575;
 }
-.button.disagree
-{
+
+.button.disagree {
     background-color: #ff0000;
 }
-.button.strongdisagree
-{
+
+.button.strongdisagree {
     background-color: #910000;
 }
-.button.back
-{
+
+.button.back {
     background-color: gray;
 }
 
-@media only screen and (max-width: 600px)
-{
-    .buttoncontainer
-    {
+@media only screen and (max-width: 600px) {
+    .buttoncontainer {
         margin-left: 1vw;;
     }
-    .button
-    {
+
+    .button {
         width: 98vw;
         height: 5vh;
         font-family: 'Manrope', sans-serif;
@@ -134,81 +124,71 @@ body, html
         display: block;
         margin-top: 1vh;
     }
-    .description
-    {
+
+    .description {
         margin: 0;
         width: 100vw;
     }
-    .ncont
-    {
+
+    .ncont {
         width: 94vw;
         height: 110vh;
         margin-left: 3vw;
     }
-    body, html
-    {
+
+    body, html {
         width: 100vw;
         height: 100vh;
     }
 }
-@media only screen and (min-width: 600px)
-{
-    .ncont
-    {
+
+@media only screen and (min-width: 600px) {
+    .ncont {
         width: 50vw;
         margin-left: 25vw;
         height: 100vh;
     }
-    br
-    {
+
+    br {
         display: none;
     }
-    .title
-    {
+
+    .title {
         font-size: 6vw;
     }
 }
 
-.alwaysdisplay
-{
+.alwaysdisplay {
     display: block !important;
 }
 
-.q_hiding
-{
+.q_hiding {
     opacity: 0;
 }
 
-.q
-{
+.q {
     transition: opacity 0.4s;
 }
 
-.q_hidden
-{
+.q_hidden {
     display: none;
 }
 
-@keyframes showing
-{
-    0% 
-    {
+@keyframes showing {
+    0% {
         opacity: 0;
     }
-    100%
-    {
+    100% {
         opacity: 1;
     }
 }
 
-.q_shown
-{
+.q_shown {
     display: block;
     animation: showing 0.4s ease;
 }
 
-.result_bar
-{
+.result_bar {
     width: 100%;
     height: 8vh;
     margin-top: 15px;
@@ -217,20 +197,17 @@ body, html
     overflow: hidden;
 }
 
-.bar_left
-{
+.bar_left {
     float: left;
     height: 100%;
 }
 
-.bar_right
-{
+.bar_right {
     float: right;
     height: 100%;
 }
 
-.footer 
-{
+.footer {
     position: fixed;
     left: 0;
     right: 5%;
@@ -238,4 +215,51 @@ body, html
     width: 95%;
     color: gray;
     text-align: right;
-  }
+}
+
+.mod_container {
+    width: 100%;
+    background-color: #d9d9d9;
+    border-radius: 25px;
+    height: 10%;
+}
+
+.mod_title {
+    font-family: 'Oxygen', sans-serif;
+    text-align: left;
+    font-size: 36pt;
+    color: black;
+    line-height: 18pt;
+    padding: 5%;
+}
+
+.mod_sub_container {
+    width: 90%;
+    height: 90%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.plus_button {
+    width: 36pt;
+    height: 36pt;
+    font-size: 26pt;
+    line-height: 30pt;
+    background-color: #09b500;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    float: right;
+}
+
+.minus_button {
+    width: 36pt;
+    height: 36pt;
+    font-size: 26pt;
+    line-height: 30pt;
+    background-color: #ff0000;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    float: right;
+}
